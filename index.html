@@ -6,36 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/stylesheet/main.css" />
     <title>Dizme | Home</title>
+    <style>
+      .header {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: all ease 0.3s;
+      }
+    </style>
   </head>
   <body>
     <div>
-      <header class="container">
-        <!-- Test -->
-        <div class="login_btn">
-          <a href="">Download Now </a>
-        </div>
-
-        <!-- Test -->
-        <div class="inner animate">
-          <a href="index.html">
-            <img class="logo" src="images/logo/logo.png" alt="Disme Logo"
-          /></a>
-
-          <div class="primary-nav">
-            <ul>
-              <li class="current"><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">Service</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Contact</a></li>
-              <li class="button">
-                <a> <span> Download CV </span> </a>
-              </li>
-            </ul>
+      <nav class="header">
+        <div class="flex items-center justify-between container transparent">
+          <div class="logo">
+            <img src="images/logo/logo.png" alt="logo" width="100px" />
+          </div>
+          <div class="col">
+            <div class="flex flex-wrap justify-between">
+              <div class="current menu-items"><a href="">Home</a></div>
+              <div class="menu-items"><a href="">About</a></div>
+              <div class="menu-items"><a href="">Portfolio</a></div>
+              <div class="menu-items"><a href="">Services</a></div>
+              <div class="menu-items"><a href="">Blog</a></div>
+              <div class="menu-items"><a href="">Contact</a></div>
+              <div class="btn menu-items">
+                <a href=""> <span>Download CV </span></a>
+              </div>
+            </div>
           </div>
         </div>
-      </header>
+      </nav>
       <div class="section">
         <div class="hero">
           <div class="background">
@@ -63,12 +66,41 @@
                     dedicated to my work.
                   </p>
                 </div>
+                <div class="container">
+                  <div class="btn about-btn">
+                    <a href="">About Me</a>
+                  </div>
+                  <div class="social">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="icon-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="icon-twiter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="icon-linkedin"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="icon-behance"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               <div class="avatar">
                 <img
                   src="images/slider/avatar.png"
                   alt="james smith image"
-                  width="250px"
+                  width="322px"
                 />
               </div>
             </div>

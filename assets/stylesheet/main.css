@@ -178,10 +178,10 @@ li {
 .current a {
   color: orangered;
 }
-.container {
+/* .container {
   max-width: 1300px;
   margin: auto;
-}
+} */
 
 /* ===============header=================== */
 .inner {
@@ -191,9 +191,7 @@ li {
   margin: 0 3em;
   padding: 1.5em 3.74em;
 }
-.logo {
-  height: 2em;
-}
+
 .primary-nav ul {
   display: flex;
   overflow: hidden;
@@ -212,36 +210,15 @@ li {
   color: orangered;
 }
 
-.button {
-  position: relative;
-  border: 2px solid orangered;
-  border-radius: 2em;
-  cursor: pointer;
-  padding: 0.7em 1.5em;
-  transition: all 0.3s ease;
-}
-
-.button :hover:after {
-  height: 115%;
-}
-.button ::before {
-  position: absolute;
-  content: "";
-  cursor: pointer;
-  z-index: -1;
-  border-radius: 5em;
-  background-color: #f75023;
-  left: -2px;
-  right: -2px;
-  bottom: -3px;
-  height: 0;
-}
-
 /* ========section======== */
 .background {
   width: 100%;
   background: no-repeat;
   position: relative;
+  height: auto;
+}
+.section {
+  height: auto;
 }
 .hero {
   width: 100%;
@@ -253,79 +230,98 @@ li {
 
 .content {
   position: absolute;
-  top: 0px;
+  top: -53px;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 105px;
+  margin: auto;
 }
 .details {
-  margin: inherit;
-  margin-top: 10em;
+  margin: 6em;
+  line-height: 41px;
+  margin-top: 18em;
 }
 .hello {
   color: orangered;
-  font-size: 1.3em;
+  font-size: 23px;
   margin-bottom: 1em;
 }
 .name {
-  font-size: 4em;
+  font-size: 59px;
   margin-bottom: 14px;
 }
 
 .job {
-  font-size: 19px;
+  font-size: 20px;
   margin-bottom: 1em;
 }
 .text {
+  font-size: 19px;
   color: #999191;
 }
 .avatar {
-  margin-top: 14em;
-  margin-left: 10em;
+  margin-top: 16em;
+  margin-right: 14em;
 }
 /* test */
-
-.login_btn {
-  margin: 16px;
+.container {
+  max-width: 1167px;
+  margin: auto;
+  padding: 16px;
 }
-
-.login_btn a {
-  text-decoration: none;
-  position: relative;
-  padding: 8px 12px;
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+
+.menu-items {
+  margin-left: 26px;
+  margin-bottom: 0;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: bold;
+}
+.btn a {
+  position: relative;
+  color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   border: 2px solid orangered;
-  border-radius: 2em;
-  max-width: 130px;
+  padding: 10px 20px;
+  border-radius: 21px;
+  max-width: 100px;
   z-index: 2;
   overflow: hidden;
 }
 
-.login_btn :hover:before {
-  /* height: 100%; */
+.btn:hover:before {
   transform: translate(0, 0);
 }
-
-.login_btn a:hover {
-  color: white;
+.btn a:hover {
+  color: #fff;
 }
-.login_btn ::before {
+.btn ::before {
   position: absolute;
   content: "";
-  cursor: pointer;
+  /* background-color: orangered; */
   z-index: -1;
-  background-color: #f75023;
   left: 0;
   top: 0;
   height: 100%;
-  transform: translate(-100%, -100%);
-
-  transition: all ease 0.2s;
+  transform: translateY(-100, -100);
+  transition: all ease 0.4s;
   width: 100%;
+}
+.about-btn {
+  padding: 5px 10px;
 }
