@@ -837,3 +837,11 @@ p {
 .header .menu-items a:hover {
   color: orangered;
 }
+
+/* ==================media query for responsivenes=================== */
+
+@media (max-width: 1000px) {
+  .header {
+    display: none !important;
+  }
+}
